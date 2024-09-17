@@ -58,3 +58,16 @@ COMMIT TRANSACTION;
 
 
 ## Support for the Sales Departments' Report
+ The design can be improved by introducing a payment schedule table that records multiple payments and their balances.
+
+ Add a paymentStatus column in the orders table to track whether the payment is pending, partially paid, or fully paid.
+
+Create a new table called paymentInstallments with the following fields:
+installmentID (PK)
+orderNumber (FK to orders)
+paymentDate
+amountPaid
+balanceRemaining
+dueDate (4 next installment)
+
+With this design, each payment can be tracked individually, and the sales department can query this table to see which orders are partially paid and how much is still owed.
