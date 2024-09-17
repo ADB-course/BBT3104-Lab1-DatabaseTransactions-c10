@@ -9,6 +9,8 @@
 
 ## Flowchart
 
+![alt text](Flowchart.jpg)
+
 ## Pseudocode
 BEGIN TRANSACTION
 
